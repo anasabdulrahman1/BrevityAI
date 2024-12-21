@@ -10,7 +10,7 @@ import { summarizeArticle } from './api/summarize';
 import { formatSummary } from './utils/formatSummary';
 import { SummaryFormat, SummaryLength } from './types/summary';
 import './styles/animations.css';
-
+import { BrevityAiSmart } from './components/sections/BrevityAiSmart'
 export default function App() {
   const [summary, setSummary] = React.useState<string[] | null>(null);
   const [format, setFormat] = React.useState<SummaryFormat>('paragraph');
@@ -47,6 +47,7 @@ export default function App() {
         />
         <UsersSection />
         <SummaryFormats />
+        <BrevityAiSmart />
         <Footer />
       </div>
     </ThemeProvider>

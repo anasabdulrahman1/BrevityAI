@@ -54,6 +54,24 @@ export function Footer() {
               contact@brevityai.com
             </a>
           </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-gray-900">Subscribe to Newsletter</h4>
+            <form className="flex flex-col md:flex-row">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="border border-gray-300 rounded-md p-2 mb-2 md:mb-0 md:mr-2"
+                required
+              />
+              <button 
+                type="submit" 
+                className="bg-purple-600 text-white rounded-md p-2 hover:bg-purple-700 transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-100">
