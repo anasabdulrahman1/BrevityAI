@@ -12,6 +12,8 @@ import { formatSummary } from './utils/formatSummary';
 import { SummaryFormat, SummaryLength } from './types/summary';
 import './styles/animations.css';
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export default function App() {
   const [summary, setSummary] = React.useState<string[] | null>(null);
   const [format, setFormat] = React.useState<SummaryFormat>('paragraph');
