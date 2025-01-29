@@ -11,6 +11,7 @@ import { summarizeArticle } from './api/summarize';
 import { formatSummary } from './utils/formatSummary';
 import { SummaryFormat, SummaryLength } from './types/summary';
 import './styles/animations.css';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const [summary, setSummary] = React.useState<string[] | null>(null);
@@ -36,6 +37,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+      <Analytics />
       <Hero />
       <Features />
       <Summary
